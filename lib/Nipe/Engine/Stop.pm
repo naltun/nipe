@@ -12,6 +12,10 @@ package Nipe::Engine::Stop {
 			$stopTor = "sv stop tor > /dev/null";
 		}
 
+		elsif ($dev{distribution} eq "alpine") {
+			$stopTor = "rc-service tor stop";
+		}
+
 		foreach my $table (@table) {
 			system ("iptables -t $table -F OUTPUT");
 			system ("iptables -t $table -F OUTPUT");

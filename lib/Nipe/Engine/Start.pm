@@ -15,6 +15,10 @@ package Nipe::Engine::Start {
 			$startTor = "sv start tor > /dev/null";
 		}
 
+		elsif ($device{distribution} eq "alpine") {
+			$startTor = "rc-service tor start";
+		}
+
 		elsif (-e "/etc/init.d/tor") {
 			$startTor = "/etc/init.d/tor start > /dev/null";
 		}
