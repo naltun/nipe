@@ -28,7 +28,7 @@ package Nipe::Utils::Device {
 			$device{distribution} = "void";
 		}
 
-		elsif ($id_distro =~ /[A,v]lpine/) {
+		elsif ($id_distro =~ /[A,a]lpine/) {
 			$device{username} = "tor";
 			$device{distribution} = "alpine";
 		}
