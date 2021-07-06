@@ -20,7 +20,7 @@ package Nipe::Utils::Install {
 			$stopTor = "sv stop tor > /dev/null";
 		}
 
-		elif ($device{distribution} eq "alpine") {
+		elsif ($device{distribution} eq "alpine") {
 			$stopTor = "rc-service tor stop";
 		}
 

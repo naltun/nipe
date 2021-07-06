@@ -12,7 +12,7 @@ package Nipe::Engine::Stop {
 			$stopTor = "sv stop tor > /dev/null";
 		}
 
-		elsif ($dev{distribution} eq "alpine") {
+		elsif ($device{distribution} eq "alpine") {
 			$stopTor = "rc-service tor stop";
 		}
 
